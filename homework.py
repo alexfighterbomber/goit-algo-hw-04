@@ -1,4 +1,5 @@
-def total_salary(path) -> tuple:
+
+def total_salary(path: str) -> tuple:
     total = 0
     count = 0
     try:
@@ -11,8 +12,8 @@ def total_salary(path) -> tuple:
 
     for line in lines:
         developer = line.split(',')
-        if len(developer) == 2:
-            total += int(developer[1])
+        if len(developer) == 2 and developer[1].strip().isdigit():
+            total += float(developer[1])
             count += 1
     
     average = total/count
