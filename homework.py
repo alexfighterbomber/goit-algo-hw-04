@@ -9,7 +9,7 @@ def total_salary(path: str) -> tuple:
         return (None,None)
     except IOError:
         return (None,None)
-
+    
     for line in lines:
         developer = line.split(',')     # розділення на елементи
         if len(developer) == 2 and developer[1].strip().isdigit():  # перевірка на коректність даних
@@ -24,9 +24,10 @@ def get_cats_info(path):
         with open(path, 'r',encoding='utf-8') as fh:    # відкриття файлу для читання
             lines = [el.strip() for el in fh.readlines() if el.strip()] # отримання списку рядків з очищенням від пробільних символів та пустих рядків
     except FileNotFoundError:
-        return (None,None)
+        return [None]
     except IOError:
-        return (None,None)
+        return [None]
+    
     cats = list()
     for line in lines:
         cat = line.split(',')    # розділення на елементи
