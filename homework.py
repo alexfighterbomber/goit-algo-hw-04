@@ -15,9 +15,9 @@ def total_salary(path: str) -> tuple:
         if len(developer) == 2 and developer[1].strip().isdigit():  # перевірка на коректність даних
             total += float(developer[1])        # підрахунок total
             count += 1
-    
     average = total/count    # підрахунок average
     return (total, average)
+
 
 def get_cats_info(path):
     try:
@@ -39,6 +39,6 @@ def get_cats_info(path):
 
 total, average = total_salary("salary_file.txt")
 print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
-
+print()
 cats_info = get_cats_info("cats_file.txt")
 print(cats_info)
