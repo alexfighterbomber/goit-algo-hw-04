@@ -35,10 +35,9 @@ def get_cats_info(path):
     return cats
 
 
-
-
+print('Task_1')
 total, average = total_salary("salary_file.txt")
 print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
-print()
+print('Task_2')
 cats_info = get_cats_info("cats_file.txt")
 print(cats_info)
