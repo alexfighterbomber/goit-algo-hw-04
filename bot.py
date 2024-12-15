@@ -48,5 +48,6 @@ def main():
         else:                           # неизвестная  команда
             print("Invalid command.")
 
+
 if __name__ == "__main__":
     main()
