@@ -34,7 +34,6 @@ def get_cats_info(path):
         if len(cat)==3: cats.append({"id":cat[0], "name":cat[1], "age":cat[2]}) # створення словників та заповнення списку 
     return cats
 
-
 print('Task_1')
 total, average = total_salary("salary_file.txt")
 print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
