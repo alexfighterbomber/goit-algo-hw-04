@@ -1,4 +1,4 @@
-# Пороблено Chat CPT ;-)
+# Пороблено Chat GPT ;-)
 
 from pathlib import Path
 from colorama import init, Fore, Style
